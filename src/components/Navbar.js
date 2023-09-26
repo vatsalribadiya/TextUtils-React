@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Brightness from '../assets/brightness.png';
 
 export default function Navbar(props) {
   return (
@@ -37,7 +38,7 @@ export default function Navbar(props) {
             </li>
           </ul>
           <div className="">
-            <img src="/brightness.png" alt="Dark" style={{width:"30px"}} onClick={props.toggleMode}/>
+            <img src={Brightness} alt="Dark" style={{width:"30px"}} onClick={props.toggleMode}/>
           </div>
         </div>
       </div>

@@ -4,22 +4,19 @@ import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import About from "./components/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import themeColor from './theme.json';
 
 function App() {
   const [mode, setMode] = useState("light");
   function toggleMode() {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = "rgb(35,39,47)";
-      document.body.style.color = "#fff";
     } else {
       setMode("light");
-      document.body.style.backgroundColor = "#fff";
-      document.body.style.color = "rgb(35,39,47)";
     }
   }
   return (
-    <>
+    <div style={themeColor[mode].container} className="h-100">
       <Router>
         <Navbar
           title="TextUtils"
@@ -35,7 +32,7 @@ function App() {
           </Routes>
         </div>
       </Router>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,14 @@
+{
+  "light": {   
+    "container" : {
+        "backgroundColor" : "#fff",
+        "color" : "rgb(35,39,47)"
+    }
+  },
+  "dark": {
+    "container" : {
+        "backgroundColor" : "rgb(35,39,47)",
+        "color" : "#fff"
+    }
+  }
+}
